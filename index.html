@@ -3,19 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع الألعاب</title>
+    <title>عالم الألعاب | Games World</title>
     <style>
-        body { font-family: system-ui, sans-serif; text-align: center; background: #1a1a1a; color: #fff; padding: 20px; margin: 0; }
-        h1 { margin-bottom: 30px; font-size: 24px; }
-        .game-btn { display: block; width: 80%; max-width: 300px; margin: 15px auto; padding: 15px; background: #28a745; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 18px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
-        .game-btn:active { transform: scale(0.98); }
+        * { box-sizing: border-box; }
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            text-align: center; 
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            color: #fff; 
+            padding: 20px 10px; 
+            margin: 0; 
+            min-height: 100vh;
+        }
+        h1 { margin-bottom: 5px; font-size: 28px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        p.subtitle { color: #88d49e; margin-bottom: 25px; font-size: 14px; }
+        
+        .games-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .game-btn { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px; 
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            color: #ffffff; 
+            text-decoration: none; 
+            border-radius: 12px; 
+            font-weight: bold; 
+            font-size: 18px; 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            transition: all 0.2s ease-in-out;
+        }
+        .game-btn:active { 
+            transform: scale(0.96); 
+            background: rgba(40, 167, 69, 0.8);
+        }
+
+        .ad-banner {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            font-size: 12px;
+            color: #aaa;
+        }
     </style>
 </head>
 <body>
-    <h1>🎮 مرحباً بك في موقع الألعاب</h1>
-    
-    <a class="game-btn" href="XO Kids.html">لعبة XO Kids</a>
-    <a class="game-btn" href="ركز واضغط!.html">لعبة ركز واضغط</a>
-    <a class="game-btn" href="صيد الهدف.html">لعبة صيد الهدف</a>
+
+    <h1>🎮 عالم الألعاب المجانية</h1>
+    <p class="subtitle">اختر لعبتك المفضلة وابدأ اللعب فوراً!</p>
+
+    <div class="ad-banner">
+        مساحة إعلانية (Top Ad)
+    </div>
+
+    <div class="games-container">
+        <a class="game-btn" href="XO Kids.html">❌⭕ لعبة XO Kids</a>
+        <a class="game-btn" href="ركز واضغط!.html">⚡ لعبة ركز واضغط</a>
+        <a class="game-btn" href="صيد الهدف.html">🎯 لعبة صيد الهدف</a>
+    </div>
+
+    <div class="ad-banner">
+        مساحة إعلانية (Bottom Ad)
+    </div>
+
 </body>
 </html>
